@@ -1,13 +1,122 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: lightgray;
+  line-height: 1.5;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 12px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.section {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    min-width: 100%;
+  }
+}
+
+main {
+  min-height: 100%;
+  display: grid;
+  place-items: center;
+}
+.title {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  color: white;
+  text-shadow: 1px 1px 4px black;
+}
+.underline {
+  height: 4px;
+  max-width: 600px;
+  background: lightslategray;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  width: 50%;
+}
+.review {
+  background: white;
+  padding: 24px 32px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px black;
+  text-align: center;
+}
+
+.img-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 4px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+.person-img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  position: relative;
+}
+.author {
+  margin-bottom: 4px;
+}
+.job {
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: darkcyan;
+  font-weight: bold;
+}
+.info {
+  margin-bottom: 12px;
+  background: cadetblue;
+  border-radius: 4px;
+  color: white;
+  padding: 8px 8px;
+}
+.prev-btn,
+.next-btn {
+  font-size: 20px;
+  background: transparent;
+  border-color: transparent;
+  margin: 0px 10px;
+  cursor: pointer;
+}
+
+.random-btn {
+  background: brown;
+  color: white;
+  padding: 4px 8px;
+  text-transform: capitalize;
+  border-radius: 2px;
+  border-color: transparent;
+  cursor: pointer;
 }
